@@ -1,0 +1,946 @@
+registers:
+  - Number: 40001
+    Type: R/W
+    Description: Modbus-addres
+    Unit: None
+    Min: 1
+    Max: 247
+    Step: 1
+    DataType: "0X00"
+  - Number: 40002
+    Type: R/W
+    Description: Baud rate
+    Unit: None
+    Min: 0
+    Max: 4
+    Step: 1
+    DataType: "0X00"
+  - Number: 40003
+    Type: R/W
+    Description: Pariteit
+    Unit: None
+    Min: 0
+    Max: 2
+    Step: 1
+    DataType: "0X00"
+  - Number: 40011
+    Type: R
+    Description: Fabrikantgroep
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 40012
+    Type: R
+    Description: SubNoneID van de fabrikant
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40013
+    Type: R
+    Description: ProductNoneID
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40014
+    Type: R
+    Description: Softwareversie
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40015
+    Type: R
+    Description: Softwarerevisie
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40016
+    Type: R
+    Description: Lijstversie
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40017
+    Type: R
+    Description: OEMNonecode
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40101
+    Type: R
+    Description: Serienummer deel 1 (uint 64) (MSB)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 40102
+    Type: R
+    Description: Serienummer deel 2 (uint 64)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 40103
+    Type: R
+    Description: Serienummer deel 3 (uint 64)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 40104
+    Type: R
+    Description: Serienummer deel 4 (uint 64) (LSB)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 40200
+    Type: R
+    Description: Foutnummer
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40201
+    Type: R/W
+    Description: Aantal fout 1 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40202
+    Type: R/W
+    Description: Aantal fout 2 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40203
+    Type: R/W
+    Description: Aantal fout 3 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40204
+    Type: R/W
+    Description: Aantal fout 4 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40211
+    Type: R/W
+    Description: Aantal fout 11 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40212
+    Type: R/W
+    Description: Aantal fout 12 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40213
+    Type: R/W
+    Description: Aantal fout 13 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40214
+    Type: R/W
+    Description: Aantal fout 14 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40215
+    Type: R/W
+    Description: Aantal fout 15 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40216
+    Type: R/W
+    Description: Aantal fout 16 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40217
+    Type: R/W
+    Description: Aantal fout 17 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40218
+    Type: R/W
+    Description: Aantal fout 18 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40219
+    Type: R/W
+    Description: Aantal fout 19 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40220
+    Type: R/W
+    Description: Aantal fout 20 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40221
+    Type: R/W
+    Description: Aantal fout 21 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40222
+    Type: R/W
+    Description: Aantal fout 22 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40223
+    Type: R/W
+    Description: Aantal fout 23 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40231
+    Type: R/W
+    Description: Aantal fout 31 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40232
+    Type: R/W
+    Description: Aantal fout 32 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40233
+    Type: R/W
+    Description: Aantal fout 33 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40234
+    Type: R/W
+    Description: Aantal fout 34 (schrijfbaar voor reset)
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 40500
+    Type: W
+    Description: Aantal fout 34 (schrijfbaar voor reset)
+    Unit: None
+    Min: 1
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42001
+    Type: R/W
+    Description: Werkelijk ventilatieniveau (gesynchroniseerd met BRDG)
+    Unit: None
+    Min: 1
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42002
+    Type: R/W
+    Description: 42001 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42011
+    Type: R/W
+    Description: Ventilatievraag toevoer
+    Unit: "m3/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X00"
+  - Number: 42012
+    Type: R/W
+    Description: 42011 inNone/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42013
+    Type: R/W
+    Description: Ventilatievraag afvoer
+    Unit: "m3/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42014
+    Type: R/W
+    Description: 42013 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42021
+    Type: R/W
+    Description: Volumestroom(flow) toevoerventilator (geen massabalans)
+    Unit: "m3/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42022
+    Type: R/W
+    Description: 42021 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42023
+    Type: R/W
+    Description: Volumestroom (flow) afvoerventilator (geen massabalans)
+    Unit: "m3/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42024
+    Type: R/W
+    Description: 42023 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42031
+    Type: R/W
+    Description: Positie stepper vorstklep Stappen
+    Unit: 0
+    Min: 510
+    Max: 1
+    Step: "0X10"
+    DataType: null
+  - Number: 42032
+    Type: R/W
+    Description: 42031 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42033
+    Type: R/W
+    Description: Positie stepper bypass klep
+    Unit: Stappen
+    Min: 0
+    Max: 550
+    Step: 550
+    DataType: "0X10"
+  - Number: 42034
+    Type: R/W
+    Description: 42033 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42035
+    Type: R/W
+    Description: Positie stepper zoneklep 1
+    Unit: Stappen
+    Min: 0
+    Max: 550
+    Step: 1
+    DataType: "0X10"
+  - Number: 42036
+    Type: R/W
+    Description: 42035 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42037
+    Type: R/W
+    Description: Positie stepper zoneklep 2
+    Unit: Stappen
+    Min: 0
+    Max: 550
+    Step: 1
+    DataType: "0X10"
+  - Number: 42038
+    Type: R/W
+    Description: 42037 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42039
+    Type: R/W
+    Description: Positie stepperzoneklep 3
+    Unit: Stappen
+    Min: 0
+    Max: 550
+    Step: 1
+    DataType: "0X10"
+  - Number: 42040
+    Type: R/W
+    Description: 42039 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42041
+    Type: R/W
+    Description: Positie stepper zoneklep 4
+    Unit: Stappen
+    Min: 0
+    Max: 550
+    Step: 1
+    DataType: "0X10"
+  - Number: 42042
+    Type: R/W
+    Description: 42041 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42201
+    Type: R/W
+    Description: Ventilatieniveau zone 1
+    Unit: None
+    Min: 0
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42202
+    Type: R/W
+    Description: 42201 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42203
+    Type: R/W
+    Description: Ventilatieniveau zone 2
+    Unit: None
+    Min: 0
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42204
+    Type: R/W
+    Description: 42203 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42205
+    Type: R/W
+    Description: Ventilatieniveau zone 3
+    Unit: None
+    Min: 0
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42206
+    Type: R/W
+    Description: 42205 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42207
+    Type: R/W
+    Description: Ventilatieniveau zone 4
+    Unit: None
+    Min: 0
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42208
+    Type: R/W
+    Description: 42207 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42209
+    Type: R/W
+    Description: Ventilatieniveau zone 5
+    Unit: None
+    Min: 0
+    Max: 25
+    Step: 1
+    DataType: "0X00"
+  - Number: 42210
+    Type: R/W
+    Description: 42209 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42211
+    Type: R/W
+    Description: Stroomvraag (flow) zone 1
+    Unit: "m³/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42212
+    Type: R/W
+    Description: 42211 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42213
+    Type: R/W
+    Description: Stroomvraag (flow) zone 2
+    Unit: "m³/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42214
+    Type: R/W
+    Description: 42213 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42215
+    Type: R/W
+    Description: Stroomvraag (flow) zone 3
+    Unit: "m³/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42216
+    Type: R/W
+    Description: 42215 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42217
+    Type: R/W
+    Description: Stroomvraag (flow) zone 4
+    Unit: "m³/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42218
+    Type: R/W
+    Description: 42217 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 42219
+    Type: R/W
+    Description: Stroomvraag (flow) zone 5
+    Unit: "m³/h"
+    Min: 0
+    Max: max cap
+    Step: 1
+    DataType: "0X10"
+  - Number: 42220
+    Type: R/W
+    Description: 42219 inschakelen/uitschakelen
+    Unit: None
+    Min: 0
+    Max: 1
+    Step: 1
+    DataType: "0X00"
+  - Number: 43001
+    Type: R
+    Description: Hoogste percentage toevoer in Automodus
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43002
+    Type: R
+    Description: Hoogste percentage afvoer in Automodus
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43011
+    Type: R
+    Description: Hoogst gemeten RV (extern en I²C) (niet in ventilatoren)
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43012
+    Type: R
+    Description: Hoogste gemeten CO2Noneconcentratie
+    Unit: "Ppm"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43021
+    Type: R
+    Description: Snelheid toevoerventilator
+    Unit: "Rpm"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43022
+    Type: R
+    Description: Snelheid afvoerventilator
+    Unit: "Rpm"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43023
+    Type: R
+    Description: Werkelijke vermogen voedingsventilator
+    Unit: W
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43024
+    Type: R
+    Description: Werkelijke vermogen afvoerventilator
+    Unit: W
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43025
+    Type: R
+    Description: Zonekleppen aangesloten; Bit 0= Zone 1; Bit 1= Zone 2; Bit 3= Zone
+      3; Bit 4= Zone 4
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43031
+    Type: R
+    Description: Volumestroom van buitenaf 
+    Unit: "m3/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43032
+    Type: R
+    Description: Massastroom van buitenaf
+    Unit: "kg/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43033
+    Type: R
+    Description: Temperatuur van buitenaf
+    Unit: "°C"
+    Min: None
+    Max: None
+    Step: None
+    DataType: 0x91
+  - Number: 43034
+    Type: R
+    Description: Relatieve vochtigheid van buitenaf
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43041
+    Type: R
+    Description: Volumestroom door vorstklep
+    Unit: "m3/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43051
+    Type: R
+    Description: Volumestroom gemengd
+    Unit: "m3/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43052
+    Type: R
+    Description: Massastroom gemengd
+    Unit: "kg/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43053
+    Type: R
+    Description: Temperatuur gemengd
+    Unit: "°C"
+    Min: None
+    Max: None
+    Step: None
+    DataType: 0x91
+  - Number: 43054
+    Type: R
+    Description: Relatieve vochtigheid gemengd "%"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43061
+    Type: R
+    Description: Volumestroom naar gebouw "m3/h"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: None"0X10"
+  - Number: 43062
+    Type: R
+    Description: Massastroom naar gebouw "kg/h"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43063
+    Type: R
+    Description: Temperatuur naar gebouw
+    Unit: "°C"
+    Min: None
+    Max: None
+    Step: None
+    DataType: 0x91
+  - Number: 43064
+    Type: R
+    Description: Relatieve vochtigheid naar gebouw "%"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43071
+    Type: R
+    Description: Volumestroom van gebouw "m3/h"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43072
+    Type: R
+    Description: Massastroom van gebouw "kg/h"
+    Unit: None
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43073
+    Type: R
+    Description: Temperatuur van gebouw
+    Unit: "°C"
+    Min: None
+    Max: None
+    Step: None
+    DataType: 0x91
+  - Number: 43074
+    Type: R
+    Description: Relatieve vochtigheid van gebouw
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43081
+    Type: R
+    Description: Volumestroom naar buiten
+    Unit: "m3/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43082
+    Type: R
+    Description: Massastroom naar buiten
+    Unit: "kg/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43083
+    Type: R
+    Description: Temperatuur naar buiten
+    Unit: "°C"
+    Min: None
+    Max: None
+    Step: None
+    DataType: 0x91
+  - Number: 43084
+    Type: R
+    Description: Relatieve vochtigheid naar buiten
+    Unit: "%"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X00"
+  - Number: 43201
+    Type: R
+    Description: Ongebalanceerde stroomvraag zone 1
+    Unit: "m³/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43202
+    Type: R
+    Description: Ongebalanceerde stroomvraag zone 2
+    Unit: "m³/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43203
+    Type: R
+    Description: Ongebalanceerde stroomvraag zone 3
+    Unit: "m³/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43204
+    Type: R
+    Description: Ongebalanceerde stroomvraag zone 4
+    Unit: "m³/h"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 43205
+    Type: R
+    Description: Ongebalanceerde stroomvraag zone 5
+    Unit: "m³/h"
+    Min: None
+    Max: 
+    Step: None
+    DataType: "0X10"
+  - Number: 44001
+    Type: R
+    Description: Levensduur teller deel 1 (uint32) (met MSB)
+    Unit: h
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 44002
+    Type: R
+    Description: Levensduur teller deel 2 (uint32) (met LSB)
+    Unit: h
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 44003
+    Type: R
+    Description: Mengstroom teller deel 1 (uint32) (met MSB)
+    Unit: "m³"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"
+  - Number: 44004
+    Type: R
+    Description: Mengstroom teller deel 2 (uint32) (met LSB)
+    Unit: "m³"
+    Min: None
+    Max: None
+    Step: None
+    DataType: "0X10"

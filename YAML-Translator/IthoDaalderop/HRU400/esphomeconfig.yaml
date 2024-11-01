@@ -1,0 +1,639 @@
+registers:
+- Description: Modbus-addres
+  address: 0
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Baud rate
+  address: 1
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Pariteit
+  address: 2
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Fabrikantgroep
+  address: 10
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: SubNoneID van de fabrikant
+  address: 11
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: ProductNoneID
+  address: 12
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Softwareversie
+  address: 13
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Softwarerevisie
+  address: 14
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Lijstversie
+  address: 15
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: OEMNonecode
+  address: 16
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Serienummer deel 1 (uint 64) (MSB)
+  address: 100
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Serienummer deel 2 (uint 64)
+  address: 101
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Serienummer deel 3 (uint 64)
+  address: 102
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Serienummer deel 4 (uint 64) (LSB)
+  address: 103
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Foutnummer
+  address: 199
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 1 (schrijfbaar voor reset)
+  address: 200
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 2 (schrijfbaar voor reset)
+  address: 201
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 3 (schrijfbaar voor reset)
+  address: 202
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 4 (schrijfbaar voor reset)
+  address: 203
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 11 (schrijfbaar voor reset)
+  address: 210
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 12 (schrijfbaar voor reset)
+  address: 211
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 13 (schrijfbaar voor reset)
+  address: 212
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 14 (schrijfbaar voor reset)
+  address: 213
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 15 (schrijfbaar voor reset)
+  address: 214
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 16 (schrijfbaar voor reset)
+  address: 215
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 17 (schrijfbaar voor reset)
+  address: 216
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 18 (schrijfbaar voor reset)
+  address: 217
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 19 (schrijfbaar voor reset)
+  address: 218
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 20 (schrijfbaar voor reset)
+  address: 219
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 21 (schrijfbaar voor reset)
+  address: 220
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 22 (schrijfbaar voor reset)
+  address: 221
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 23 (schrijfbaar voor reset)
+  address: 222
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 31 (schrijfbaar voor reset)
+  address: 230
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 32 (schrijfbaar voor reset)
+  address: 231
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 33 (schrijfbaar voor reset)
+  address: 232
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 34 (schrijfbaar voor reset)
+  address: 233
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Aantal fout 34 (schrijfbaar voor reset)
+  address: 499
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Werkelijk ventilatieniveau (gesynchroniseerd met BRDG)
+  address: 2000
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42001 inschakelen/uitschakelen
+  address: 2001
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatievraag toevoer
+  address: 2010
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42011 inNone/uitschakelen
+  address: 2011
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatievraag afvoer
+  address: 2012
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42013 inschakelen/uitschakelen
+  address: 2013
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom(flow) toevoerventilator (geen massabalans)
+  address: 2020
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42021 inschakelen/uitschakelen
+  address: 2021
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom (flow) afvoerventilator (geen massabalans)
+  address: 2022
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42023 inschakelen/uitschakelen
+  address: 2023
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepper vorstklep Stappen
+  address: 2030
+  unit_of_measurement: 0
+  value_type: null
+  register_type: holding
+  state_class: measurement
+- Description: 42031 inschakelen/uitschakelen
+  address: 2031
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepper bypass klep
+  address: 2032
+  unit_of_measurement: Stappen
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42033 inschakelen/uitschakelen
+  address: 2033
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepper zoneklep 1
+  address: 2034
+  unit_of_measurement: Stappen
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42035 inschakelen/uitschakelen
+  address: 2035
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepper zoneklep 2
+  address: 2036
+  unit_of_measurement: Stappen
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42037 inschakelen/uitschakelen
+  address: 2037
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepperzoneklep 3
+  address: 2038
+  unit_of_measurement: Stappen
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42039 inschakelen/uitschakelen
+  address: 2039
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Positie stepper zoneklep 4
+  address: 2040
+  unit_of_measurement: Stappen
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42041 inschakelen/uitschakelen
+  address: 2041
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatieniveau zone 1
+  address: 2200
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42201 inschakelen/uitschakelen
+  address: 2201
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatieniveau zone 2
+  address: 2202
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42203 inschakelen/uitschakelen
+  address: 2203
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatieniveau zone 3
+  address: 2204
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42205 inschakelen/uitschakelen
+  address: 2205
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatieniveau zone 4
+  address: 2206
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42207 inschakelen/uitschakelen
+  address: 2207
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ventilatieniveau zone 5
+  address: 2208
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42209 inschakelen/uitschakelen
+  address: 2209
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Stroomvraag (flow) zone 1
+  address: 2210
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42211 inschakelen/uitschakelen
+  address: 2211
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Stroomvraag (flow) zone 2
+  address: 2212
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42213 inschakelen/uitschakelen
+  address: 2213
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Stroomvraag (flow) zone 3
+  address: 2214
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42215 inschakelen/uitschakelen
+  address: 2215
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Stroomvraag (flow) zone 4
+  address: 2216
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42217 inschakelen/uitschakelen
+  address: 2217
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Stroomvraag (flow) zone 5
+  address: 2218
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: 42219 inschakelen/uitschakelen
+  address: 2219
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Hoogste percentage toevoer in Automodus
+  address: 3000
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Hoogste percentage afvoer in Automodus
+  address: 3001
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Hoogst gemeten RV (extern en I²C) (niet in ventilatoren)
+  address: 3010
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Hoogste gemeten CO2Noneconcentratie
+  address: 3011
+  unit_of_measurement: Ppm
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Snelheid toevoerventilator
+  address: 3020
+  unit_of_measurement: Rpm
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Snelheid afvoerventilator
+  address: 3021
+  unit_of_measurement: Rpm
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Werkelijke vermogen voedingsventilator
+  address: 3022
+  unit_of_measurement: W
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Werkelijke vermogen afvoerventilator
+  address: 3023
+  unit_of_measurement: W
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Zonekleppen aangesloten; Bit 0= Zone 1; Bit 1= Zone 2; Bit 3= Zone
+    3; Bit 4= Zone 4
+  address: 3024
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom van buitenaf
+  address: 3030
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Massastroom van buitenaf
+  address: 3031
+  unit_of_measurement: kg/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Temperatuur van buitenaf
+  address: 3032
+  unit_of_measurement: °C
+  value_type: 145
+  register_type: holding
+  state_class: measurement
+- Description: Relatieve vochtigheid van buitenaf
+  address: 3033
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom door vorstklep
+  address: 3040
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom gemengd
+  address: 3050
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Massastroom gemengd
+  address: 3051
+  unit_of_measurement: kg/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Temperatuur gemengd
+  address: 3052
+  unit_of_measurement: °C
+  value_type: 145
+  register_type: holding
+  state_class: measurement
+- Description: Relatieve vochtigheid gemengd "%"
+  address: 3053
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom naar gebouw "m3/h"
+  address: 3060
+  value_type: None"0X10"
+  register_type: holding
+  state_class: measurement
+- Description: Massastroom naar gebouw "kg/h"
+  address: 3061
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Temperatuur naar gebouw
+  address: 3062
+  unit_of_measurement: °C
+  value_type: 145
+  register_type: holding
+  state_class: measurement
+- Description: Relatieve vochtigheid naar gebouw "%"
+  address: 3063
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom van gebouw "m3/h"
+  address: 3070
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Massastroom van gebouw "kg/h"
+  address: 3071
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Temperatuur van gebouw
+  address: 3072
+  unit_of_measurement: °C
+  value_type: 145
+  register_type: holding
+  state_class: measurement
+- Description: Relatieve vochtigheid van gebouw
+  address: 3073
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Volumestroom naar buiten
+  address: 3080
+  unit_of_measurement: m3/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Massastroom naar buiten
+  address: 3081
+  unit_of_measurement: kg/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Temperatuur naar buiten
+  address: 3082
+  unit_of_measurement: °C
+  value_type: 145
+  register_type: holding
+  state_class: measurement
+- Description: Relatieve vochtigheid naar buiten
+  address: 3083
+  unit_of_measurement: '%'
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ongebalanceerde stroomvraag zone 1
+  address: 3200
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ongebalanceerde stroomvraag zone 2
+  address: 3201
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ongebalanceerde stroomvraag zone 3
+  address: 3202
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ongebalanceerde stroomvraag zone 4
+  address: 3203
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Ongebalanceerde stroomvraag zone 5
+  address: 3204
+  unit_of_measurement: m³/h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Levensduur teller deel 1 (uint32) (met MSB)
+  address: 4000
+  unit_of_measurement: h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Levensduur teller deel 2 (uint32) (met LSB)
+  address: 4001
+  unit_of_measurement: h
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Mengstroom teller deel 1 (uint32) (met MSB)
+  address: 4002
+  unit_of_measurement: m³
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement
+- Description: Mengstroom teller deel 2 (uint32) (met LSB)
+  address: 4003
+  unit_of_measurement: m³
+  value_type: U_WORD
+  register_type: holding
+  state_class: measurement

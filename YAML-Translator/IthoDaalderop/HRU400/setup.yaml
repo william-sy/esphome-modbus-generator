@@ -1,0 +1,22 @@
+setup:
+    subtract: 40001
+    adress: 72
+    baud_rate: 19200
+    databits: 8
+    parity: even
+    stopbits: 1
+    modbus_controller_id: hru400
+
+DataType:
+    - name: 0X00
+      description: Unsigned 8 bit
+      min: 0
+      max: 255
+    - name: 0X10
+      description: Unsigned 16 bit
+      min: 0
+      max: 65535   
+    - name: 0X91 
+      descripion: Unsigned 16 bit/10
+      min: -3276.8
+      max: 3176.7
