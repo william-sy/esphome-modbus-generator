@@ -1,0 +1,1 @@
+# This is step 2, it translates your generated YAML into a ESPHOME YAML
