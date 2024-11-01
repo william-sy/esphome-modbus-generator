@@ -32,6 +32,9 @@ for register in data.get('registers', []):
     # New fields:
     register['register_type'] = "holding"
     register['state_class'] = "measurement"
+    register['platform'] = "modbus_controller"
+    register['modbus_controller_id'] = "wtw"
+
     if 'Max' in register:
         register.pop('Max')
     if 'Min' in register:
@@ -41,7 +44,7 @@ for register in data.get('registers', []):
     if 'Type' in register:
         register.pop('Type')
     
-yaml_data = yaml.dump(data, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2,noArrayIndenrt=false)
+yaml_data = yaml.dump(data, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
 
 # Write the transformed YAML data to a new file
 with open(output_yaml_file, mode='w', encoding='utf-8') as file:
